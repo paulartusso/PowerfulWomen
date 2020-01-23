@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.card{
+    height: 580px;
+    width: 350px;
+    position: relative;
+    border-radius: 3px;
+    margin:60px;
+}
+
+.card-data{
+    font-family: "Rubik", sans-serif;
+    background-color: aliceblue;
+    opacity: 0.9;
+    height: 105px;
+    width: 280px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    padding: 15px;
+    color: rgb(65, 62, 62);
+    overflow: hidden;
+    transition: all 0.3s linear;
+    background: linear-gradient(to bottom, rgb(130, 139, 145), whitesmoke);
+}
+
+.card-data-icon{
+    height: 35px;
+    width: 30px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    transition:all 0.3s linear;
+}
+
+.card-data.agrandar{
+    height: 550px;
+    width: 320px;
+    left: 0px;
+    background: linear-gradient(to bottom, rgb(130, 139, 145), whitesmoke);
+}
+
+.card-data-icon{
+   cursor: pointer;
+}
+
+.card-data.agrandar .card-data-icon{
+    transform:rotate(180deg);
+}
