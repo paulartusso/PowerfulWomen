@@ -28,7 +28,6 @@ const App = () =>{
   return (
     <div className="container">
       {women.map((woman, index) =>{
-        if(index % 2 == 1)
       return(
       <Slide key={`womanid-${index}`}
              imagen= {woman.imagen}
