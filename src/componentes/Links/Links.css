@@ -1,0 +1,10 @@
+.nav{
+    margin-left: 60px;
+}
+.link-button{
+    width: 115px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgb(159, 212, 212);
+    border: none;
+}

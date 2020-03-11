@@ -1,12 +1,28 @@
 import React from 'react';
-import Slide from "./componentes/Slide/Slide";
+import SwitchComponent from "./componentes/SwitchComponent/SwitchComponent";
+import Links from "./componentes/Links/Links"
 
-import Wonder from "./componentes/Slide/Wonder-Woman.jpg"
-import Leia from "./componentes/Slide/Leia.jpg"
-import Lara from "./componentes/Slide/Lara.jpg"
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from 'react-router-dom';
 
 import './App.css';
 
+const App = () =>{
+  return (
+    <div className="container">
+      <BrowserRouter>
+        <SwitchComponent></SwitchComponent>
+        <Links></Links>
+      </BrowserRouter>
+    </div>
+  );
+}
+export default App;
+
+/*
 const App = () =>{
   const women =[
         {
@@ -39,5 +55,4 @@ const App = () =>{
     </div>
   );
 }
-
-export default App;
+*/
